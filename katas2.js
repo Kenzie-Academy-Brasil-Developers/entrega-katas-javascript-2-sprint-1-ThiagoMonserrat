@@ -1,11 +1,28 @@
 // comece a criar a sua função add na linha abaixo
+function add(x, y){
+    let primeirovalor = x
+    let segundovalor = y 
+    let resultado = primeirovalor + segundovalor
+    return resultado
+  }
+  
+
 
 
 // descomente a linha seguinte para testar sua função
 // console.assert(add(3, 5) === 8, 'A função add não está funcionando como esperado');
 
 
+
 // comece a criar a sua função multiply na linha abaixo
+function multiply(valor1, valor2){
+    let result = 0
+    for(let i = 0; i < valor2; i++){
+    result = add(valor1, result)
+    }
+    return result
+
+} 
 
 
 // descomente a linha seguinte para testar sua função
@@ -13,6 +30,15 @@
 
 
 // comece a criar a sua função power na linha abaixo
+function power(primeiro, segundo){
+    let final = 1
+    for(let i = 0; i < segundo; i++){
+    final = multiply(primeiro, final)
+    }
+    return final
+    
+}
+power(3, 4)
 
 
 // descomente a linha seguinte para testar sua função
