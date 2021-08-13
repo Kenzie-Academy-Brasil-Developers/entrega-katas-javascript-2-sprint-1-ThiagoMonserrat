@@ -36,9 +36,8 @@ function power(primeiro, segundo){
     final = multiply(primeiro, final)
     }
     return final
-    
+
 }
-power(3, 4)
 
 
 // descomente a linha seguinte para testar sua função
@@ -46,6 +45,16 @@ power(3, 4)
 
 
 // comece a criar a sua função factorial na linha abaixo
+function factorial(fator){
+    let retorno = 1
+    for(let i = 1; i < fator; fator--){
+    retorno = multiply(fator, retorno)
+    //console.log(retorno)
+    }
+    return retorno
+       
+}
+   
 
 
 // descomente a linha seguinte para testar sua função
